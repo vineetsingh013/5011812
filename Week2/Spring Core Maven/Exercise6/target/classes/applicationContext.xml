@@ -7,10 +7,8 @@
            http://www.springframework.org/schema/context
            http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <!-- Bean definition for BookRepository -->
     <bean id="bookRepository" class="com.library.repository.BookRepository" />
 
-    <!-- Bean definition for BookService -->
     <bean id="bookService" class="com.library.service.BookService">
         <property name="bookRepository" ref="bookRepository" />
     </bean>
